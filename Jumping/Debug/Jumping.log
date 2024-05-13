@@ -1,0 +1,19 @@
+﻿  Source.cpp
+D:\Jumping\Source.cpp(479,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Jumping\Source.cpp(690,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Jumping\Source.cpp(698,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Jumping\Source.cpp(705,31): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+D:\Jumping\Source.cpp(716,31): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+D:\Jumping\Source.cpp(727,31): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+D:\Jumping\Source.cpp(741,31): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+D:\Jumping\Source.cpp(845,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Jumping\Source.cpp(851,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Jumping\Source.cpp(1007,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Jumping\Source.cpp(1014,38): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Jumping\Source.cpp(1014,38): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Jumping\Source.cpp(1014,44): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Jumping\Source.cpp(1014,44): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Jumping\Source.cpp(1020,38): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Jumping\Source.cpp(1020,38): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Jumping\Source.cpp(1537,35): warning C4390: ';': empty controlled statement found; is this the intent?
+  Jumping.vcxproj -> D:\Jumping\Debug\Jumping.exe
