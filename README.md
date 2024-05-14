@@ -23,6 +23,7 @@
 ## III. TÍNH NĂNG
 
 - Đồ họa đơn giản nhưng đẹp mắt.
+- Có âm thanh sinh đông
 - Điểm số cao nhất được lưu lại để bạn có thể thách thức bản thân.
   
 ![Screenshot 2024-05-13 034545](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/691056b5-017f-4fe0-84e3-69ce6f9c2f04)
