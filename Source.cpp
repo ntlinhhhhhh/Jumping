@@ -1,4 +1,4 @@
-﻿#include <SDL.h>
+#include <SDL.h>
 #include <SDL_image.h>
 #include<SDL_ttf.h>
 #include <iostream>
@@ -896,7 +896,7 @@ void jumpCharacter(float deltaTime, int& gCharacterY)
     {
         isJumping = false;
     }
-
+    return;
 }
 void fallCharacter(float deltaTime, int previousCharacterY, int& gCharacterY)// ham di chuyen nhan vat xuong
 {
@@ -1232,6 +1232,7 @@ void jumpsound()
         std::cout << "Failed to load background music! SDL_mixer Error: " << Mix_GetError() << std::endl;
         return;
     }
+    Mix_VolumeChunk(jumpSound, MIX_MAX_VOLUME);
     Mix_PlayChannel(-1, jumpSound, 0);
 }
 void diesound()
@@ -1506,18 +1507,18 @@ void control()
 
         endtime = currentTime - starttime;
         updatescore();
-        if (score % 50 == 0&&score!= 0) pointsound();
+        if (score % 100 == 0&&score!= 0) pointsound();
 
 
         // Nếu nhân vật đang nhảy
         if (isJumping) {
-            jumpsound();
             jumpCharacter(deltaTime, gCharacterY); // Thực hiện nhảy của nhân vật
+            //jumpsound();
         }
 
         else { // Nếu nhân vật không nhảy
             // Lưu vị trí trước khi nhảy
-
+            Mix_FreeChunk(jumpSound);
             previousCharacterY = Y;
 
             // Di chuyển nhân vật xuống
@@ -1525,6 +1526,12 @@ void control()
             //isJumping = false;
         }
 
+        if (checkCollision(gCharacterX+100, gCharacterY, gCharacterWidth, gCharacterHeight, ObstacleStartX, ObstacleStartY, ObstacleX1, ObstacleY1)||
+            checkCollision(gCharacterX+100, gCharacterY, gCharacterWidth, gCharacterHeight, ObstacleStartX1, ObstacleStartY, ObstacleX1, ObstacleY1) ||
+            checkCollision(gCharacterX+100, gCharacterY, gCharacterWidth, gCharacterHeight, ObstacleStartX2, ObstacleStartY, ObstacleX1, ObstacleY1))
+        {
+            jumpsound();
+        }
 
         if (checkCollision(gCharacterX, gCharacterY, gCharacterWidth, gCharacterHeight, ObstacleStartX, ObstacleStartY, ObstacleX1, ObstacleY1) ||
             checkCollision(gCharacterX, gCharacterY, gCharacterWidth, gCharacterHeight, ObstacleStartX1, ObstacleStartY, ObstacleX1, ObstacleY1) ||
@@ -1532,8 +1539,9 @@ void control()
         {
             gameover = true;
             endgame = true;
-            diesound();
             SDL_Delay(100);
+            diesound();
+           
             
             if (endgame)
             {
