@@ -1,4 +1,4 @@
-# GAME: JUMPING                                    
+![Screenshot 2024-05-22 084038](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/8bab7827-a7a3-46d8-a816-80169e0e0723)# GAME: JUMPING                                    
                                             
 # I. GIỚI THIỆU
 - Chào mừng bạn đến với JUMPING! Đây là một trò chơi đơn giản và giải trí được lấy cảm hứng từ trò chơi "Con Khủng Long" trong trình duyệt Google Chrome.
@@ -37,10 +37,27 @@
   3. SDL2_mixer: https://github.com/libsdl-org/SDL_mixer/releases
   4. SDL2_ttf: https://github.com/libsdl-org/SDL_ttf/releases
 - Bước 2: Link thư viện với dự án
-  
-  
+  + Chọn vào project, nhấp chuột phải và chọn properties
+  ![Screenshot 2024-05-22 084020](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/3ade927d-a40d-42f5-8bf7-041a1b9dd3cb)
+  ![Screenshot 2024-05-22 084038](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/b9ab65d6-324c-4449-a7b0-fd7b58b0db5a)
+  + Khi hiện ra của sổ properties, chọn phần VC++ Directories
+
+![Screenshot 2024-05-22 084107](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/3e057756-dfd0-41de-92f5-acc0cb6318d3)
+  + Chọn Include Directories, Libary Directories, Libary WinRT Directories để thêm đường dẫn
+    
+
+![Screenshot 2024-05-22 084639](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/8a897d0a-affc-4940-91b8-da551c97beab)
+
++ Tiếp tục chọn phần Linker -> Input -> Additional Dependencies và thêm: SDL2.lib, SDL2main.lib, SDL2_image.lib, SDL2_mixer.lib, SDL2_ttf.lib
+
+
+![Screenshot 2024-05-22 084944](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/ff80565e-70df-4390-8ae8-628cf96f478e)
++ chon Apply->OK để hoàn thành việc thêm thư viện
+
+![Screenshot 2024-05-22 084944](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/9f3a5f92-d9e3-4e01-8f11-b396f24f1b60)
+
 - Tải xuống hoặc sao chép mã nguồn của game từ kho lưu trữ.
-- Mở trình biên dịch và tải dự án vào.
+- Mở trình biên dịch và tải dự án.
 - Chạy game bằng cách nhấn nút "PLAY". 
 ![menu](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/112075f7-d192-4da1-953a-1c0b4871b080)
 
