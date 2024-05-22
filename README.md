@@ -29,6 +29,16 @@
 ![Screenshot 2024-05-13 034545](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/691056b5-017f-4fe0-84e3-69ce6f9c2f04)
 
 ## IV. Hướng dẫn cài đặt
+
+> Cách cài đặt thư viện SDL2
+- Bước 1: Tải các thư viện từ trang web chính thức: (bản-VC.zip)
+  1. SDL2: https://github.com/libsdl-org/SDL/releases
+  2. SDL2_image: https://github.com/libsdl-org/SDL_image/releases
+  3. SDL2_mixer: https://github.com/libsdl-org/SDL_mixer/releases
+  4. SDL2_ttf: https://github.com/libsdl-org/SDL_ttf/releases
+- Bước 2: Link thư viện với dự án
+  
+  
 - Tải xuống hoặc sao chép mã nguồn của game từ kho lưu trữ.
 - Mở trình biên dịch và tải dự án vào.
 - Chạy game bằng cách nhấn nút "PLAY". 
