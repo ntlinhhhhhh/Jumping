@@ -1,4 +1,4 @@
-![Screenshot 2024-05-22 084038](https://github.com/ntlinhhhhhh/Jumping/assets/160174186/8bab7827-a7a3-46d8-a816-80169e0e0723)# GAME: JUMPING                                    
+# GAME: JUMPING                                    
                                             
 # I. GIỚI THIỆU
 - Chào mừng bạn đến với JUMPING! Đây là một trò chơi đơn giản và giải trí được lấy cảm hứng từ trò chơi "Con Khủng Long" trong trình duyệt Google Chrome.
